@@ -6,16 +6,43 @@ body{
 
 h2{
     font-weight: bold;
-    text-align: center;
+    text-align: center; 
 }
 
 
+/* ARTICLE */
+article{
+    padding: 0;
+    margin-left: -76px;
+}
+
+.main-content{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: 0;
+}
+
+section{
+    display: flex;
+}
+
 
 /*HEADER*/
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+    text-align: center;
+    margin-left: 2rem;
+}
+
 aside img{
     border-radius: 100%;
     border: 1px solid;
-    margin-left: 50px;
 }
 
 header{
@@ -35,13 +62,15 @@ header h1{
 
 /*MENU*/
 #menu{
-    padding: 4%;
     padding-top: 300px;
-    width: 194px;
+    width: 250px;
     height: 818px;
     border-bottom-left-radius: 78px;
     border-bottom-right-radius: 78px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    line-height: 5rem;
 }
 
 #menu a{
@@ -55,7 +84,8 @@ header h1{
 
 /*EDUCATION*/
 #education{
-    margin-top: 2rem;
+    /* display: flex; */
+    margin-top: 3rem;
 }
 
 .education-description{
@@ -69,22 +99,28 @@ header h1{
     margin: 2rem;
 }
 
+/* #experience{
+    display: flex;
+} */
+
+
+
 
 /*FOOTER*/
 footer{
-    margin-top: 150px;
     text-align: center;
 }
 
 
 /*REUSABLE CLASSES*/
+/* .split{
+    flex: 1;
+} */
+
 .padding{
     padding: 2%;
 }
 
-.padding-left{
-    padding-left: 30rem;
-}
 
 .pink-color{
     background-color: #E97777;
