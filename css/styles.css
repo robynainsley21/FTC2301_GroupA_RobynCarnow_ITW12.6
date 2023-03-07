@@ -99,23 +99,48 @@ header h1{
     margin: 2rem;
 }
 
-/* #experience{
-    display: flex;
-} */
-
-
 
 
 /*FOOTER*/
-footer{
+button{
+    padding: 1.5% 4%;
+    border-radius: 5px;
+    border: 1px;
+    margin: 2% auto;
+}
+
+.icons{
     text-align: center;
 }
 
+.fa-brands{
+    padding: 9%;
+}
+
+footer{
+    display: flex;
+}
+
+footer h2{
+    text-align: left;
+}
+
+.contact{
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin: 1%;
+    padding: 2%;
+}
+
+input{
+    margin: 2%;
+}
+
+
+
 
 /*REUSABLE CLASSES*/
-/* .split{
-    flex: 1;
-} */
 
 .padding{
     padding: 2%;
