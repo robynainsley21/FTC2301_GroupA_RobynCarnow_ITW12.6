@@ -40,6 +40,7 @@ header h1{
     height: 100vh;
     background: #EDC373 url("/Images/my-banner.gif");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
