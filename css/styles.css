@@ -2,6 +2,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h2{
@@ -10,10 +11,42 @@ h2{
 }
 
 
+/*HEADER*/
+#header-text{
+    margin: auto 10%;
+    line-height: 2rem;
+}
+
+.profile-image{
+    float: left;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    padding: 10% 5%;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+
+#banner {
+    width: 100vw;
+    height: 100vh;
+    background: #EDC373 url("/Images/my-banner.gif");
+    background-size: cover;
+}
+
+
+
 /* ARTICLE */
 article{
     padding: 0;
-    margin-left: -76px;
 }
 
 .main-content{
@@ -29,52 +62,24 @@ section{
 }
 
 
-/*HEADER*/
-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    top: -250px;
-    text-align: center;
-    margin-left: 2rem;
-}
 
-aside img{
-    border-radius: 100%;
-    border: 1px solid;
-}
 
-header{
-    padding: 5%;
-    padding-left: 45%;
+
+/* ASIDE */
+aside{    
     text-align: center;
 }
 
-.header-content{
-    float: right;
-}
-
-header h1{
-    margin: 0;
-}
-
-
-/*MENU*/
 #menu{
-    padding-top: 300px;
+    position: fixed;
+    top: 70%;
+    right: 6%;
+    z-index: 100;
+    height: auto;
     width: 250px;
-    height: 818px;
-    border-bottom-left-radius: 78px;
-    border-bottom-right-radius: 78px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -200px;
-    line-height: 5rem;
-}
-
-#menu a{
-    text-decoration: none;
+    border-radius: 60px;
+    line-height: 1.5rem;
+    padding: 1%;
 }
 
 #menu li{
@@ -82,14 +87,27 @@ header h1{
 }
 
 
+
 /*EDUCATION*/
 #education{
-    /* display: flex; */
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3rem auto;
 }
 
 .education-description{
     color:#E97777;
+}
+
+#education-content{
+    display: flex;
+    justify-content: center;
+
+}
+
+.education-container{
+    margin: 0 5%;
 }
 
 
