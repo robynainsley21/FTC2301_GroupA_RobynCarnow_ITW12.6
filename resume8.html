@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robyn's Resume (7-2)</title>
+    <title>Robyn's Resume</title>
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -14,12 +14,16 @@
 <body>
     <header id="banner" >
         <div class="header-content white-text">
-            <img src="Images/images.jpeg" alt="profile-image" class="profile-image">
+            <picture>
+                <source srcset="Images/user-image-small.jpeg" media="(max-width: 425px)">
+                <source srcset="Images/user-image.jpg" media="(max-width: 1440px)">
+                <img src="Images/user-image.jpg" alt="profile-image" class="profile-image">
+            </picture>
         
             <div id="header-text">
                 <h1>Robyn Carnow</h1>
                 <h3>Software developer in training</h3>                
-                <p>Introductory paragraph about the owner of the resume. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p>Introductory sentence about the owner of the resume.</p>
             </div>
         </div>
        
@@ -69,41 +73,46 @@
                 </div>
                 
                 
-                <div id="experience"class="orange-color padding padding-left">
+                <div id="experience" class="pink-color">
                     <h2>Experience</h2>
-                        <id class="split">
+                    <div id="experience-content">
+                        <id class="job">
                             <p>Job 1</p>
                             <p class="job-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
                         </id>   
-                        <id class="split">
+
+                        <id class="job">
                             <p>Job 2</p>
                             <p class="job-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
-                        </id>            
+                        </id>           
+                    </div>
+                         
                 </div>
                 
-                
-                <div id="strengths" class="padding padding-left">
+                <div id="strengths-skills">
+                    <div id="strengths" class="padding item">
                         <h2>Strengths</h2>    
-                    <ul>
-                        <li>strength 1</li>
-                        <li>strength 2</li>
-                        <li>strength 3</li>
-                    </ul>
+                        <ul>
+                            <li>strength 1</li>
+                            <li>strength 2</li>
+                            <li>strength 3</li>
+                        </ul>
+                    </div>               
+                
+                    <div id="skills" class="padding item">
+                            <h2>Skills</h2>
+                        <ul>
+                            <li>skill 1</li>
+                            <li>skill 2</li>
+                            <li>skill 3</li>
+                        </ul>
+                    </div>
                 </div>
                 
-                
-                <div id="skills" class="padding padding-left">
-                        <h2>Skills</h2>
-                    <ul>
-                        <li>skill 1</li>
-                        <li>skill 2</li>
-                        <li>skill 3</li>
-                    </ul>
-                </div>
             </div>
             
             
@@ -113,42 +122,45 @@
     </section>     
 
     <footer id="footer" class="orange-color padding">
-    <div class="contact-form contact">
-            <h2>Email</h2>
-            <form action="https://formsubmit.co/robynainsley2i@gmail.com" method="POST">
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" pattern="username@characters.domain" size="30" required>
-            
-                <div class="email-subject">
-                    <label for="email-subject">Choose the subject of your email: </label>
-
-                    <input list="email-subject" id="email-choices">
-                    <datalist name="email-subject" id="email-subject" required>
-                        <option value="Employment">
-                        <option value="Offered Services">
-                        <option value="General Enquiry">                        
-                    </datalist>
-                    
-                </div>
-
-                <div>
-                    <p><label for="message-to-me">Type Your Message Here:</label></p>
-                    <textarea id="message-to-me" name="message" rows="5" cols="33"></textarea>
-                </div>                
+        <div class="contact-form contact">
+                <h2>Email</h2>
+                <form action="https://formsubmit.co/robynainsley2i@gmail.com" method="POST">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" pattern="username@characters.domain" size="30" required>
                 
-                <button type="submit">Send</button>
-           </form>
-    </div>
-    <div class="contact">
-        <div class="other-contact-details">
-            <h2> Other Contact Details</h2>
-            <div class="icons">
-                <a class="white-text" href="https://www.linkedin.com/in/robyn-carnow-2b0762267/"><i class="fa-brands fa-linkedin fa-5x"></i></a>
-                <a class="white-text" href=""><i class="fa-brands fa-twitter fa-5x"></i></a>
-            </div>
-            
+                    <div class="email-subject">
+                        <label for="email-subject">Choose the subject of your email: </label>
+
+                        <input list="email-subject" id="email-choices">
+                        <datalist name="email-subject" id="email-subject" required>
+                            <option value="Employment">
+                            <option value="Offered Services">
+                            <option value="General Enquiry">                        
+                        </datalist>
+                        
+                    </div>
+
+                    <div>
+                        <p><label for="message-to-me">Type Your Message Here:</label></p>
+                        <textarea id="message-to-me" name="message" rows="5" cols="33"></textarea>
+                    </div>                
+                    
+                    <button type="submit">Send</button>
+            </form>
         </div>
-    </div>
+        <div class="contact">
+            <h2> Other Contact Details</h2>
+            <div class="other-contact-details">
+                
+                <div class="icons">
+                    <a class="white-text" href="https://www.linkedin.com/in/robyn-carnow-2b0762267/"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+                    <a class="white-text" href=""><i class="fa-brands fa-twitter fa-5x"></i></a>
+                </div>
+                
+            </div>
+        </div>
+
+   
             
     </footer>
 </body>
